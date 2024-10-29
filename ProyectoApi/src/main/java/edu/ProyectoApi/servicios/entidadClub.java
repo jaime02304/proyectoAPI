@@ -1,6 +1,9 @@
 package edu.ProyectoApi.servicios;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 /**
  * Clase donde se encuentra la representacion del objeto club
@@ -11,8 +14,8 @@ import jakarta.persistence.*;
 public class entidadClub {
 
 	@Id
-	@GeneratedValue
-	long id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	long id; 
 	String nombreClub = "aaaaa";
 	String correoElectronicoClub ="aaaaa";
 	String paisClub ="aaaaa";

@@ -4,7 +4,7 @@ package edu.ProyectoApi.Dtos;
  * Clase donde se encuentra los DTOs del club
  * @author jpribio - 29/10724
  */
-public class clubSto {
+public class clubDto {
 	
 long id;
 String nombreClub = "aaaaa";
