@@ -22,23 +22,17 @@ public interface clubInterfaz {
 	/**
 	 * Metodo que muestra el club por el id
 	 * @author jpribio - 29/10/24
-	 * @param id del club a mostrar
+	 * @param inombre del club a mostrar
 	 * @return Devuelve el DTO
 	 */
-	public Optional<clubDto> obtenerClub(Long id);
+	public Optional<clubDto> obtenerClub(String nombreClub);
 	
-	/**
-	 * Metodo para listar todos los club
-	 * @author jpribio - 29/10/24
-	 * @return Devuelve una lista que contiene todos los clubs
-	 */
-	public List<clubDto> listarClub();
 	
 	/**
 	 * Metodo que elimina el club por el ID
 	 * @author jpribio - 29/10/24
-	 * @param id del club para eliminar
+	 * @param nombre del club para eliminar
 	 */
-	public void eliminarClub(Long id);
+	public void eliminarClub(String nombreClub);
 
 }
