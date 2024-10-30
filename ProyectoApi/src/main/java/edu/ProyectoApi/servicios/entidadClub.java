@@ -16,6 +16,7 @@ public class entidadClub {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long id; 
+	
 	String nombreClub = "aaaaa";
 	String correoElectronicoClub ="aaaaa";
 	String paisClub ="aaaaa";
